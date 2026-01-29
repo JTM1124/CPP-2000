@@ -1,0 +1,34 @@
+/* John Thomas Mathison 
+CSCI 2000
+January 29, 2026
+This program will check when to turn lights on or off*/
+
+#include <iostream>
+using namespace std;  
+
+
+int main()
+{
+   
+	bool is_night;
+	bool motion_detected; 
+	
+
+	cout << "Is it nighttime?" << endl; 
+	cin >> is_night; 
+	cout << "Is there motion detected?" << endl; 
+	cin >> motion_detected;       // again, has to use 1 or 0 for true and false and cannot type true/false
+
+	if (is_night and motion_detected)
+	{
+		cout << "Turn lights on" << endl;
+	}
+	else
+	{
+		cout << "Turn lights off" << endl; 
+	}
+
+	return 0; 
+
+}
+
