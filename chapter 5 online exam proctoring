@@ -1,0 +1,38 @@
+/* John Thomas Mathison
+CSCI 2000
+January 29, 2026
+This progam will only allow someone to take an exam if they are beign proctored */ 
+
+
+#include <iostream>
+using namespace std; 
+
+
+int main()
+{
+    
+    bool camera_on; 
+    bool microphone_on; 
+    
+    cout << "Is the camera on?" << endl; 
+    cin >> camera_on; 
+    cout << "Is the microphone on?" << endl; 
+    cin >> microphone_on;     // use 1 and 0 for true and false, you have to redo if you want to actually type True or False 
+
+    if (camera_on and microphone_on)
+    {
+        cout << "Allow Exam" << endl; 
+
+    }
+    else
+    {
+        cout << "Access Denied" << endl; 
+    }
+
+    return 0; 
+
+
+
+
+
+}
