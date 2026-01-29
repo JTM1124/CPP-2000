@@ -1,0 +1,36 @@
+/* John Thomas Mathison
+CSCI 2000
+January 29, 2026
+This program will calculate a delivery fee */
+
+
+#include <iostream>
+using namespace std; 
+
+
+int main()
+{
+   
+	double total;
+
+	cout << "How much was your bill?" << endl; 
+	cin >> total; 
+	
+	if (total >= 50)
+	{
+		cout << "Free Delivery" << endl; 
+	}
+	else if (20 <= total < 50)
+	{
+		cout << "$5 delivery fee" << endl; 
+	}
+	else
+	{
+		cout << "$10 delivery fee" << endl; 
+	}
+	return 0; 
+
+
+
+}
+
