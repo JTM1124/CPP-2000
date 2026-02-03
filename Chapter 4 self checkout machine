@@ -1,0 +1,45 @@
+/* John Thomas Mathison 
+* January 27, 2026 
+* CSCI 2000
+* this program will act like a self checkout machine
+*/
+
+
+#include <iostream>
+using namespace std; 
+
+
+int main()
+{
+	double price_item_1;
+	int quantity_item_1;
+	double price_item_2;
+	int quantity_item_2;
+	double price_item_3;
+	int quantity_item_3;
+
+	cout << "Scan first item:" << endl; 
+		cin >> price_item_1; 
+	cout << "Enter quantity:"<< endl; 
+	cin >> quantity_item_1 ; 
+	cout << "Scan second item:"<< endl; 
+	cin >> price_item_2; 
+	cout << "Enter quantity:"<< endl; 
+	cin >> quantity_item_2;
+	cout << "Scan third item:"<< endl; 
+	cin >> price_item_3;
+	cout << "Enter quantity:"<< endl;
+	cin >> quantity_item_3; 
+
+	double total_price;
+	total_price = (price_item_1 * quantity_item_1) + (price_item_2 * quantity_item_2) + (price_item_3 * quantity_item_3); 
+
+
+	cout << "----------------------------------------" << endl; 
+	cout << "----------------------------------------" << endl; 
+	cout << "Total Bill= $" << total_price << endl; 
+	return 0; 
+
+
+}
+
