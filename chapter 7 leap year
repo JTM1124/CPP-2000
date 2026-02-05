@@ -1,0 +1,35 @@
+/* John Thomas Mathison 
+CSCI 2000
+Feb 5, 2026 
+This program will check if a year is a leap year or not*/
+
+#include <iostream>
+using namespace std; 
+
+
+int main()
+{
+	int year; 
+
+	cout << "Enter a year: " << endl; 
+	cin >> year; 
+
+
+	if (year % 4 == 0 and year % 100 != 0)
+	{
+		cout << "Leap Year" << endl; 
+	}
+	else if (year % 400 == 0)
+	{
+		cout << "Leap Year" << endl; 
+	}
+	else
+	{
+		cout << "Not a Leap Year" << endl; 
+	}
+	return 0; 
+
+
+
+}
+
