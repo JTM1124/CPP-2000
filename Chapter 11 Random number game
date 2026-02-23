@@ -1,0 +1,45 @@
+/* John Thomas Mathison
+ CSCI 2000
+ 23 Feb 2026*/
+
+
+#include <iostream>
+using namespace std;
+#include <cstdlib>
+#include <ctime>
+
+int main ()
+{
+    
+    srand(time(0));
+    int secret_number = rand() % 10 + 1 ;
+    int guess;
+    
+    
+    cout << "Guess the number" << endl;
+    cin >> guess;
+    
+   while (secret_number != guess)
+   {
+     if (guess > secret_number)
+     {
+         cout << "Too big, guess again" << endl;
+         cin >> guess;
+     }
+       else if ( guess < secret_number )
+        
+       {
+           cout << "Too small, guess again" << endl;
+           cin >> guess;
+       }
+       else
+       {
+           cout <<"Error, guess again" << endl;
+           cin >> guess;
+       }
+   }
+    cout << "Congratulations, You got it right" << endl;
+    
+    
+    return 0;
+}
