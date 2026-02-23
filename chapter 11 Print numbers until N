@@ -1,0 +1,30 @@
+/* John Thomas Mathison
+ CSCI 2000
+ Feb 19, 2026*/
+
+
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    
+    int final_number;
+    int number =1;
+    
+    cout << "Enter the final number: " << endl;
+    cin >> final_number;
+    
+    while (final_number > number)
+    {
+        number = number +1;
+        cout << number << endl;
+        
+        
+    }
+    
+    
+    
+    return 0;
+}
