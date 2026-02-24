@@ -1,0 +1,86 @@
+/* John Thomas Mathison 
+CSCI 2000
+24 Feb 2026 */
+
+#include <iostream> 
+using namespace std; 
+
+int main()
+{
+
+	double balance = 1000; 
+	double change; 
+	int action; 
+
+
+
+	do
+	{
+		cout << "----------------------------" << endl; 
+		cout << "             ATM" << endl; 
+		cout << "----------------------------" << endl; 
+		cout << "1) Deposit Money" << endl; 
+		cout << "2) Withdraw Money" << endl; 
+		cout << "3) Check Balance" << endl; 
+		cout << "4) Exit" << endl; 
+		cout << "----------------------------" << endl;
+		cout << "What would you like to do today (1-4)" << endl; 
+		cin >> action;
+		if (action < 1 || action > 4)
+		{
+			cout << "error" << endl; 
+			return 0; 
+
+		}
+		switch (action)
+		{
+		case 1:
+			cout << "How much money would you like to Deposit?" << endl;
+			cin >> change;
+			if (change < 0)
+			{
+				cout << "error" << endl;
+				return 0;
+			}
+			balance = balance + change;
+			cout << "" << endl; 
+			cout << "" << endl;
+			break;
+		case 2:
+			cout << "How much money would you like to Withdraw?" << endl;
+			cin >> change;
+			if (change < 0)
+			{
+				cout << "error" << endl;
+				return 0;
+			}
+			else if (change > balance)
+			{
+				cout << "Insufficient Balance" << endl; 
+				break; 
+			}
+			balance = balance - change;
+			cout << "" << endl;
+			cout << "" << endl;
+			break; 
+		case 3:
+			cout << "Your balance is: " << balance << "." << endl;
+			cout << "" << endl;
+			cout << "" << endl;
+			break;
+			
+		}
+
+	} while (action != 4); 
+	cout << "Have a great day" << endl; 
+
+
+
+
+
+
+
+
+
+	return 0; 
+}
